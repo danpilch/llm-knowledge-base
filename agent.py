@@ -21,7 +21,7 @@ db_url="postgresql+psycopg://ai:ai@localhost:5532/ai"
 
 # Agent config
 description="You are the knowledge base of interesting facts about William Shakespere and his works"
-instructions="Provide a summary of information about William Shakespeare's works, using the search_knowledge_base tool to access relevant context."
+instructions="Provide a summary of information about William Shakespeare's works. Only use the context provided by search_knowledge_base to answer the users questions"
 
 # The default agent of choice using OpenAI Chat
 openai_agent = Agent(

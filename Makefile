@@ -37,6 +37,11 @@ destroy-pgvector:
 	docker stop pgvector
 	docker rm pgvector
 
+.PHONY: stop-pgvector
+stop-pgvector: #: Stop the pgvector datastore docker container
+stop-pgvector:
+	docker stop pgvector
+
 .PHONY: create-pgvector-dimensions
 create-pgvector-dimensions: #: Update pgvector table and document vectors for an existing table
 create-pgvector-dimensions:
